@@ -18,4 +18,13 @@ The purpose of deployment 2 was to set up Jenkins within our AWS EC2 instances a
   -Once, I got that I had to look for the zip file Jenkin created. Once, I found that I sent it over to my local PC and uploaded the AWS Elastic Beanstalk.
 
 ## System Design Diagram:
-To view the System Design Diagram, click ![here!]
+To view the System Design Diagram, click ![here!](diagram.png)
+
+##Issues/ Troubleshooting:
+1. The first issue, I had was finding the Jenkins zip file it created. Upon looking within my EC2 and searching online, I soon figured out that Jenkins has it in its logs.
+
+![image](https://github.com/auzhangLABS/Installing-Jenkins/assets/138344000/435fe75b-cba5-4172-b607-5cf429377356)
+
+2. The second issue, I had was trying to send files from my EC2 over to my local computer. I figured this out by doing research and coming to a solution. First, I would give access to my EC2 to access my local computer. Then, I would send it over via ssh on my local computer. However, I did find many ways to do this but I found this to be simpler and easier for me.
+
+![image](https://github.com/auzhangLABS/Installing-Jenkins/assets/138344000/1f120ff7-62e8-42e2-91d1-154a228dc6f3)
