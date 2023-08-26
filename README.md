@@ -12,10 +12,10 @@ The purpose of deployment 2 was to set up Jenkins within our AWS EC2 instances a
        - `  sudo apt-get install fontconfig openjdk-17-jre`
        - `sudo apt-get install jenkins`
 3. Open up Jenkins and set up Pipeline Utility Steps
-  - Since this is a new Jenkins, I when in and set up everything (Username, Password, etc.). Once, I was in I went to Available Plugin to download the Pipeline Utility Steps add-on. From there, I ran my application through Jenkins.
-  - Finding the files Jenkins created/Uploaded to Elastic Beanstalk
-  -Thankfully, my application ran with no error, however during the Packaging of the output files stage I had to click continue as this was mentioned in the Jenkin file.
-  -Once, I got that I had to look for the zip file Jenkin created. Once, I found that I sent it over to my local PC and uploaded the AWS Elastic Beanstalk.
+     - Since this is a new Jenkins, I when in and set up everything (Username, Password, etc.). Once, I was in I went to Available Plugin to download the Pipeline Utility Steps add-on. From there, I ran my application through Jenkins.
+     - Finding the files Jenkins created/Uploaded to Elastic Beanstalk
+     -Thankfully, my application ran with no error, however during the Packaging of the output files stage I had to click continue as this was mentioned in the Jenkin file.
+     -Once, I got that I had to look for the zip file Jenkin created. Once, I found that I sent it over to my local PC and uploaded the AWS Elastic Beanstalk.
 
 ## System Design Diagram:
 To view the System Design Diagram, click [here](https://github.com/auzhangLABS/Installing-Jenkins/blob/main/diagram.png)
