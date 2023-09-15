@@ -10,12 +10,12 @@ The purpose of deployment 2 was to set up Jenkins within our AWS EC2 instances a
          - Gets Jenkins package repository GPG key form URL and pipes the output to /dev/null
        - `echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \https://pkg.jenkins.io/debian binary/ | sudo tee \/etc/apt/sources.list.d/jenkins.list > /dev/null`
          - Output an APT source entry repository. The entry point to Jenkins specifies where the key is located. The pipe the output to dev/null
+       - `sudo apt-get update`
+         - Download information from all configured sources. Get info in updated version of packages/ dependencies
        - `  sudo apt-get install fontconfig openjdk-17-jre`
          - Installing a Jave Runtime Environment since Jenkins is Java-based
        - `sudo apt-get install jenkins`
          - Install the Jenkins Package along with its necessary dependencies.
-      - `sudo apt-get update`
-         - Download information from all configured sources. Get info in updated version of packages/ dependencies
 3. Open up Jenkins and set up Pipeline Utility Steps
      - Since this is a new Jenkins, I when in and set up everything (Username, Password, etc.). Once, I was in I went to Available Plugin to download the Pipeline Utility Steps add-on. From there, I ran my application through Jenkins.
      - Finding the files Jenkins created/Uploaded to Elastic Beanstalk
