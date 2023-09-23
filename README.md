@@ -35,4 +35,4 @@ To view the System Design Diagram, click [here](https://github.com/auzhangLABS/I
 ![image](https://github.com/auzhangLABS/Installing-Jenkins/assets/138344000/1f120ff7-62e8-42e2-91d1-154a228dc6f3)
 
 ## Optimization:
-I would optimize this deployment by creating a bash SCP script that would make sending files from local to remote/ remote to local easier.
+I would optimize this deployment by creating a bash SCP script that would make sending files from local to remote/ remote to local easier. See an example [here!](https://github.com/auzhangLABS/a1_bash_script2/blob/main/ssh_scp.sh)
